@@ -5,7 +5,6 @@
 *.log.*
 *.tmp
 *.rdb
-*.toml
 
 .DS_Store
 .htaccess
@@ -16,4 +15,3 @@
 
 makefile
 /config/dashboard.toml
-*.toml
