@@ -5,6 +5,7 @@
 *.log.*
 *.tmp
 *.rdb
+*.toml
 
 .DS_Store
 .htaccess
