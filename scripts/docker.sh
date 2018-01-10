@@ -51,12 +51,12 @@ server)
     ;;
 
 fe)
-    docker rm -f      "Codis-F8080" &> /dev/null
-    docker run --name "Codis-F8080" -d \
+    docker rm -f      "Codis-F80" &> /dev/null
+    docker run --name "Codis-F80" -d \
          -v `realpath log`:/codis/log \
-         -p 8080:8080 \
+         -p 80:8080 \
      codis-image \
-     codis-fe -l log/fe.log --zookeeper ${hostip}:2181 --listen=0.0.0.0:8080 --assets=/gopath/src/github.com/CodisLabs/codis/bin/assets
+     codis-fe -l log/fe.log --zookeeper ${hostip}:2181 --listen=0.0.0.0:8080 --assets=/gopath/src/github.com/mloves0824/codis/bin/assets
     ;;
 
 cleanup)
