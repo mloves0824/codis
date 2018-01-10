@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := build-all
 
 export GO15VENDOREXPERIMENT=1
+export GOPATH=$GOPATH:$PWD
 
 build-all: codis-server codis-dashboard codis-proxy codis-admin codis-ha codis-fe clean-gotest
 
