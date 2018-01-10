@@ -44,9 +44,10 @@ server)
         docker rm -f      "Codis-S${port}" &> /dev/null
         docker run --name "Codis-S${port}" -d \
             -v `realpath log`:/codis/log \
+            -v `realpath ./redis.conf`:/codis/redis.conf \
             -p $port:6379 \
             codis-image \
-            codis-server --logfile log/${port}.log
+            codis-server redis.conf --logfile log/${port}.log
     done
     ;;
 
@@ -67,6 +68,7 @@ cleanup)
         docker rm -f      "Codis-S${port}" &> /dev/null
     done
     docker rm -f      "Codis-Z2181" &> /dev/null
+    docker rm -f      "Codis-F80"
     ;;
 
 *)
