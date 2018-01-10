@@ -8,8 +8,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/CodisLabs/codis/pkg/utils/bufio2"
-	"github.com/CodisLabs/codis/pkg/utils/errors"
+	"github.com/mloves0824/codis/pkg/utils/bufio2"
+	"github.com/mloves0824/codis/pkg/utils/errors"
 )
 
 var (

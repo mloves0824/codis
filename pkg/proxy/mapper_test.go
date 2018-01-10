@@ -6,8 +6,8 @@ package proxy
 import (
 	"testing"
 
-	"github.com/CodisLabs/codis/pkg/proxy/redis"
-	"github.com/CodisLabs/codis/pkg/utils/assert"
+	"github.com/mloves0824/codis/pkg/proxy/redis"
+	"github.com/mloves0824/codis/pkg/utils/assert"
 )
 
 func TestGetOpStr(t *testing.T) {

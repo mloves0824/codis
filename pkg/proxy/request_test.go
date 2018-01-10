@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CodisLabs/codis/pkg/proxy/redis"
-	"github.com/CodisLabs/codis/pkg/utils/assert"
+	"github.com/mloves0824/codis/pkg/proxy/redis"
+	"github.com/mloves0824/codis/pkg/utils/assert"
 )
 
 func TestRequestChan1(t *testing.T) {

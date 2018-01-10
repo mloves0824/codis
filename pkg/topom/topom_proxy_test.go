@@ -6,7 +6,7 @@ package topom
 import (
 	"testing"
 
-	"github.com/CodisLabs/codis/pkg/utils/assert"
+	"github.com/mloves0824/codis/pkg/utils/assert"
 )
 
 func TestCreateProxy(x *testing.T) {

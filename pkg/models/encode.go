@@ -6,8 +6,8 @@ package models
 import (
 	"encoding/json"
 
-	"github.com/CodisLabs/codis/pkg/utils/errors"
-	"github.com/CodisLabs/codis/pkg/utils/log"
+	"github.com/mloves0824/codis/pkg/utils/errors"
+	"github.com/mloves0824/codis/pkg/utils/log"
 )
 
 func jsonEncode(v interface{}) []byte {
